@@ -37,7 +37,7 @@
           <td>{ppt.body}</td>
           <td>{format(ppt.date, "yyyy.MM.dd")}</td>
           <td>
-            <a href="{ppt.link}">접속하기</a>
+            <a href="{ppt.link}" data-sveltekit-reload>접속하기</a>
           </td>
         </tr>
         {/each}
