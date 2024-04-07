@@ -20,9 +20,6 @@ dependencies:
   reveal.js:
     specifier: ^5.0.5
     version: 5.0.5
-  reveal.js-simplemenu:
-    specifier: ^2.0.1
-    version: 2.0.1(reveal.js@5.0.5)
   sass:
     specifier: ^1.74.1
     version: 1.74.1
@@ -2308,14 +2305,6 @@ packages:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: true
-
-  /reveal.js-simplemenu@2.0.1(reveal.js@5.0.5):
-    resolution: {integrity: sha512-JuT/3fCe9FPjBVHZzFB0pOX6xtq5LCdPts7beBdR+r/WxOGDeBVvSC+k2gd7C4KTYM4HzwSI6/9fDSneXKS9Rw==}
-    peerDependencies:
-      reveal.js: ^4.2
-    dependencies:
-      reveal.js: 5.0.5
-    dev: false
 
   /reveal.js@5.0.5:
     resolution: {integrity: sha512-MPWPV/cRlkZhh72dAGYv/bUCr9ulwM2/ucCqiL/KN4tvhb6VvN49iwOyWHE08wppj8lMQXi2xbS3kyKgfyTYqg==}
