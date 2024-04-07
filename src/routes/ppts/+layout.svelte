@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 
 	// Reveal.js
 	import Reveal from 'reveal.js';
@@ -10,9 +10,10 @@
 	import Highlight from 'reveal.js/plugin//highlight/highlight';
 	import Notes from 'reveal.js/plugin/notes/notes';
 
+	let deck: Reveal.Api;
 
 	onMount(function () {
-		const deck = new Reveal({
+		deck= new Reveal({
 			plugins: [Highlight, Notes]
 		});
 
@@ -20,6 +21,10 @@
 			dependencies: []
 		});
 	});
+	
+	onDestroy(function() {
+		deck.destroy();
+	})
 </script>
 
 <div class="reveal">
