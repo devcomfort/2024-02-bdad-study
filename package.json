@@ -16,6 +16,7 @@
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/eslint": "^8.56.0",
+		"@types/lodash": "^4.17.0",
 		"@types/node": "^20.12.5",
 		"@types/reveal.js": "^5.0.3",
 		"@typescript-eslint/eslint-plugin": "^7.0.0",
@@ -40,6 +41,8 @@
 	"dependencies": {
 		"@picocss/pico": "^2.0.6",
 		"@svelte-web-fonts/google": "^1.0.4",
+		"date-fns": "^3.6.0",
+		"lodash": "^4.17.21",
 		"reveal.js": "^5.0.5",
 		"reveal.js-simplemenu": "^2.0.1",
 		"sass": "^1.74.1"
