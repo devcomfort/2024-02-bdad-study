@@ -2,7 +2,7 @@
 	// Google Fonts
 	import GoogleFont, { getFontStyle } from '@svelte-web-fonts/google';
 	import type { GoogleFontFamily, GoogleFontVariant } from '@svelte-web-fonts/google';
-	
+
 	// TailwindCSS
 	import '../app.pcss';
 	import '../tailwind.css';
@@ -11,7 +11,6 @@
 		family: 'Noto Sans KR' as GoogleFontFamily,
 		variants: ['400'] as GoogleFontVariant[]
 	} as const;
-
 </script>
 
 <svelte:head>
@@ -20,6 +19,6 @@
 	<GoogleFont fonts={[font]} display="swap" />
 </svelte:head>
 
-<div class="w-full h-full" style={getFontStyle(font.family, font.variants[0])}>
+<div class="h-full w-full" style={getFontStyle(font.family, font.variants[0])}>
 	<slot />
 </div>
