@@ -21,6 +21,12 @@
 			body: 'VSCode와 확장 프로그램 설정 (HTML, CSS, JS, TS 개요)',
 			date: new Date('2024-04.09'),
 			link: './ppts/2'
+		},
+		{
+			title: 'HTML 문서 기본 구조',
+			body: 'HTML 구조를 살펴만 보기',
+			date: new Date('2024.04.09'),
+			link: './ppts/3'
 		}
 	];
 </script>
