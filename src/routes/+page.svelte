@@ -18,7 +18,7 @@
 		},
 		{
 			title: '개발 환경 설정법',
-			body: 'VSCode와 확장 프로그램 설정',
+			body: 'VSCode와 확장 프로그램 설정 (HTML, CSS, JS, TS 개요)',
 			date: new Date('2024-04.09'),
 			link: './ppts/2'
 		}
