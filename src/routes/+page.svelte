@@ -31,8 +31,14 @@
 		{
 			title: 'JavaScript 개발 환경 설정',
 			body: 'Node.js, nvm, 패키지 관리자 설치법',
-			date: new Date('2024-04.15'),
+			date: new Date('2024.04.15'),
 			link: '/ppts/4'
+		},
+		{
+			title: 'TypeScript 시작하기',
+			body: '타입스크립트 라이브러리 설치, 실행 방법',
+			date: new Date('2024.04.15'),
+			link: '/ppts/5'
 		}
 	];
 </script>
