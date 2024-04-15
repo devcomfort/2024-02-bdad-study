@@ -27,6 +27,12 @@
 			body: 'HTML 구조를 살펴만 보기',
 			date: new Date('2024.04.09'),
 			link: './ppts/3'
+		},
+		{
+			title: 'JavaScript 개발 환경 설정',
+			body: 'Node.js, nvm, 패키지 관리자 설치법',
+			date: new Date('2024-04.15'),
+			link: '/ppts/4'
 		}
 	];
 </script>
