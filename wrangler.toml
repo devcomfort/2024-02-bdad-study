@@ -1,11 +1,11 @@
 # 프로젝트 이름
 name = "2024-02-bdad-study"
 
-# 웹팩 엔트리 포인트 파일 경로  
-main = "src/index.js"
+# SvelteKit의 빌드 출력 위치 지정
+main = "build"
 
 [site]
-# GitHub Pages를 위한 빌드 출력 디렉토리
+# Cloudflare Pages를 위한 빌드 출력 디렉토리
 bucket = "./build"
 
 # 배포할 디렉토리 지정
