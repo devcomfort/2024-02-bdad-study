@@ -51,4 +51,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: .
-          command: pages deploy --project-name 2024-02-bdad-study ../build
+          command: pages deploy --project-name 2024-02-bdad-study ./build
+
+      - name: List build directory contents
+        run: ls -l ./build
