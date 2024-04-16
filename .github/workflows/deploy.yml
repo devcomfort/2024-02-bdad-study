@@ -53,7 +53,8 @@ jobs:
 
       - name: Unzip tar
         run: |
-          tar -xvf ./bulild/artifact.tar
+          tar -xvf ./bulild/artifact.tar -C ./build
+        continue-on-error: true
       
       - name: List build directory contents
         run: |
