@@ -54,15 +54,7 @@ jobs:
       - name: Unzip tar
         run: |
           tar -xvf ./build/artifact.tar -C ./build
-        continue-on-error: true
       
-      - name: List build directory contents
-        run: |
-          pwd
-          ls -l .
-          du -h --max-depth 1
-          ls -l ./build
-
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
