@@ -50,4 +50,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           workingDirectory: .
-          command: pages publish ./build
+          command: pages deploy ./build
