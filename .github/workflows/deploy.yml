@@ -41,14 +41,15 @@ jobs:
           path: 'build/'
 
   deploy:
-    environment: 2024-02-bdad-study-cloudflare-pages
-    needs: build_site
     runs-on: ubuntu-latest
+    needs: build_site
+    environment: 2024-02-bdad-study-cloudflare-pages
     steps:
       - name: Fetch artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: build
+          path: 'build/'
       
       - name: List build directory contents
         run: |
