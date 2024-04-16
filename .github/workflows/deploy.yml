@@ -50,10 +50,10 @@ jobs:
         with:
           name: build
           path: 'build/'
-          
+
       - name: Unzip tar
         run: |
-          tar -xvf artifact.tar
+          tar -xvf ./bulild/artifact.tar
       
       - name: List build directory contents
         run: |
