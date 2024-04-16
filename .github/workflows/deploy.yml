@@ -56,6 +56,7 @@ jobs:
           pwd
           ls -l .
           du -h --max-depth 1
+          ls -l ./build
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
