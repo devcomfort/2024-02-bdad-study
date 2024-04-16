@@ -46,7 +46,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List build directory contents
-        run: ls -l ..
+        run: |
+          pwd
+          ls -l .
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
