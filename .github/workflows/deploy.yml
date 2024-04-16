@@ -41,6 +41,7 @@ jobs:
           path: ./build
 
   deploy:
+    environment: 2024-02-bdad-study-cloudflare-pages
     needs: build_site
     runs-on: ubuntu-latest
     steps:
