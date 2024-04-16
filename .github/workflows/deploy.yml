@@ -45,6 +45,9 @@ jobs:
     needs: build_site
     runs-on: ubuntu-latest
     steps:
+      - name: List build directory contents
+        run: ls -l ./build
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
@@ -52,6 +55,3 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: .
           command: pages deploy --project-name 2024-02-bdad-study ./build
-
-      - name: List build directory contents
-        run: ls -l ./build
